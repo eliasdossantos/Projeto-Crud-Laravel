@@ -1,4 +1,5 @@
-# Projeto Laravel 10
+# Projeto Laravel 10 
+**Crud Exercício de fixação de Laravel**
 
 ## Requisitos do Projeto / Configuração do Ambiente
 
@@ -15,57 +16,32 @@ Certifique-se de que seu ambiente atenda aos seguintes requisitos antes de inici
 
 2. **Clonar o Repositório**
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/eliasdossantos/Projeto-Crud-Laravel.git
 
 3. **Acessar o Diretório do Projeto**
     - cd seu-projeto
 
 4. **Instalar as Dependências com o Composer**
-```
-composer install
-```
+   - composer install
 
 5. **Configurar o Ambiente**
-    - Duplicar o arquivo ".env.example" e renomear para ".env"
-    - Alterar no arquivo .env o nome da base de dados para "SeuBancoDeDados". Exemplo: DB_DATABASE=seu_banco_de_dados
+    - Copie o arquivo .env.example para um novo arquivo chamado .env e configure as variáveis de ambiente, como conexão com o banco de dados.
+    - Gere a chave de aplicativo com o comando:
+    - php artisan key:generate
 
-6. **Gere a chave de aplicativo com o comando:**
-```
-php artisan key:generate
-```
+6. **Iniciar o Servidor Laravel**
+    - php artisan serve
 
-7. **Criar a migration**
-```
-php artisan make:migration create_SUATABELA_table
-```
-
-8. **Executar as migration**
-```
-php artisan migrate
-```
-
-9. **Iniciar o Servidor Laravel**
-```
-php artisan serve
-```
-
-10. **Acessar o Projeto Localmente**
+7. **Acessar o Projeto Localmente**
     - http://127.0.0.1:8000
 
-11. **Criar Controller**
+8. **Criar Controller**
     - exemplos: php artisan make:controller ContaController
-```
-php artisan make:controller NomeDaController
-```
+    - php artisan make:controller NomeDaController
 
-12. **Criar a Models**
-```
-php artisan make:model Conta
-```
-
-13. **Criar a VIEW**
+9. **Criar a VIEW**
     - exemplos php artisan make:view contas/create
-```
-php artisan make:view nomeDaView
-```
+    - php artisan make:view nomeDaView
 
+10. **Criar banco de dados com o migrate no laravel 10**
+    - php artisan migrate
